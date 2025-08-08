@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cantina Grill</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-white text-gray-800 font-sans p-6">
+
+  <nav class="mb-8 flex justify-end gap-6 text-lg font-medium">
+    <a href="index.html" class="text-blue-600 underline hover:text-blue-700 transition-colors">HOME</a>
+    <a href="menu.html" class="hover:text-blue-600 transition-colors">MENU</a>
+    <a href="about.html" class="hover:text-blue-600 transition-colors">ABOUT</a>
+    <a href="contact.html" class="hover:text-blue-600 transition-colors">CONTACT</a>
+  </nav>
+
+  <div class="flex justify-end items-center mb-6 gap-3">
+    <label for="font-select" class="text-sm font-semibold">Font Style:</label>
+    <select id="font-select" aria-label="Select font type" 
+      class="border border-gray-300 rounded-md px-3 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+      <option value="sans-serif" selected>Sans-Serif</option>
+      <option value="serif">Serif</option>
+      <option value="monospace">Monospace</option>
+    </select>
+  </div>
+
+  <hr class="mb-8 border-gray-300"/>
+
+  <main class="max-w-xl ml-auto mr-0 text-right">
+    <h1 class="text-4xl font-extrabold text-yellow-700 mb-4 tracking-wide">CANTINA GRILL</h1>
+    <img src="food.jpg" alt="Mexican food" 
+      class="w-full rounded-lg shadow-lg mb-5 hover:scale-105 transition-transform duration-300" />
+    <p class="text-xl font-semibold">AUTHENTIC MEXICAN CUISINE</p>
+    <p class="mt-3">
+      <a href="about.html" class="text-blue-600 hover:text-blue-700 hover:underline font-bold transition-colors">
+        About Us
+      </a>
+    </p>
+  </main>
+
+</body>
+</html>

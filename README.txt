@@ -1,0 +1,2 @@
+1. I implemented an interactive feature where you can change the font from the righthand side. There are 3 font options available.
+2. I implemented a feature where if you hover on an image, you can see a caption.

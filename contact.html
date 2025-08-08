@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact - Cantina Grill</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-white text-gray-800 font-sans p-6">
+
+  <nav class="mb-8 flex justify-end gap-6 text-lg font-medium">
+    <a href="index.html" class="hover:text-blue-600 transition-colors">HOME</a>
+    <a href="menu.html" class="hover:text-blue-600 transition-colors">MENU</a>
+    <a href="about.html" class="hover:text-blue-600 transition-colors">ABOUT</a>
+    <a href="contact.html" class="text-blue-600 underline hover:text-blue-700 transition-colors">CONTACT</a>
+  </nav>
+
+  <div class="flex justify-end items-center mb-6 gap-3">
+    <label for="font-select" class="text-sm font-semibold">Font Style:</label>
+    <select id="font-select" aria-label="Select font type"
+      class="border border-gray-300 rounded-md px-3 py-1 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+      <option value="sans-serif" selected>Sans-Serif</option>
+      <option value="serif">Serif</option>
+      <option value="monospace">Monospace</option>
+    </select>
+  </div>
+
+  <hr class="mb-8 border-gray-300"/>
+
+  <main class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+    <section class="bg-gray-50 rounded-lg shadow-sm p-6">
+      <h2 class="text-2xl font-bold text-yellow-700 mb-4">Contact</h2>
+
+      <form class="space-y-4 mb-6">
+        <div>
+          <label for="name" class="block text-sm font-semibold">Name</label>
+          <input id="name" type="text" placeholder="Name"
+            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-semibold">Email</label>
+          <input id="email" type="email" placeholder="Email"
+            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition">
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-semibold">Message</label>
+          <textarea id="message" placeholder="Message" rows="4"
+            class="w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"></textarea>
+        </div>
+      </form>
+
+      <p class="mb-4">
+        <a href="mailto:contact@thecantinagrill.com" 
+           class="text-blue-600 hover:text-blue-700 hover:underline font-bold transition-colors">
+          contact@thecantinagrill.com
+        </a>
+      </p>
+
+      <p>
+        <strong>HOURS</strong><br>
+        Mon–Fri <strong>11am–10pm</strong><br>
+        Sat–Sun <strong>1pm–11pm</strong>
+      </p>
+    </section>
+    <figure class="text-center">
+      <img src="restaurant.jpg" alt="Interior of Cantina Grill" 
+           class="w-full rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" tabindex="0">
+      <figcaption class="mt-2 text-sm text-gray-600">Our warm and inviting interior!</figcaption>
+    </figure>
+
+  </main>
+
+</body>
+</html>
